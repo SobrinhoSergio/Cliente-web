@@ -1,6 +1,6 @@
 # Prog-Cliente-Web 🚀
 
-## Sérgio Sobrinho
+## Sérgio Sobrinho, RJ
 
 **Bem-vindo(a) ao repositório de Programação Cliente Web!**  
 Este repositório contém todos os conteúdos das aulas de JavaScript de forma modular, cada uma em sua própria branch. Ao final de cada aula, fazemos o merge com a branch principal (`main`) para manter o progresso centralizado. O repositório segue boas práticas de versionamento com Git, garantindo um fluxo organizado e controlado de desenvolvimento.
