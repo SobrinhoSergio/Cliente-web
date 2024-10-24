@@ -6,3 +6,7 @@ id_rsa.pub
 # Ignorar outros arquivos e pastas que não devem ser enviados
 node_modules/
 .env
+
+
+package-lock.json
+package.json
