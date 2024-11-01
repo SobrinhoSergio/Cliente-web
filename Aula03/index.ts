@@ -21,9 +21,9 @@ function soma(x: number, y: number): number {
 fazOperacao(soma);
 
 //Usando Spread (...)
-var a = {"nome": "Vitor", "cidade": "Nova Friburgo"};
+var al = {"nome": "Vitor", "cidade": "Nova Friburgo"};
 var b = {"cidade": "Miracema", "gostosMusicais": ["Rock"]};
-var c = {...a, ...b};
+var c = {...al, ...b};
 console.log(c);
 var d  = [1,2];
 var e = [3, 4];
