@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nome e Sobrenome</title>
+    <script type="text/javascript" src="../dist/Aula07/nomeSobrenome.js"></script>
 </head>
 <body>
     <h1>Formulário de Nome e Sobrenome</h1>
@@ -21,22 +22,5 @@
     </form>
 
     <h2>Nome Completo: <span id="nomeCompleto"></span></h2>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const form = document.getElementById('formNomeSobrenome');
-
-            form.addEventListener('submit', (e) => {
-                e.preventDefault(); // Impede o formulário de recarregar a página
-                
-                const nome = document.getElementById('nome').value;
-                const sobrenome = document.getElementById('sobrenome').value;
-                
-                const nomeCompleto = nome + ' ' + sobrenome;
-                
-                document.getElementById('nomeCompleto').innerText = nomeCompleto;
-            });
-        });
-    </script>
 </body>
 </html>
