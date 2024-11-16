@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    const form = document.getElementById('formSomar') as HTMLFormElement;
-    const resultadoDisplay = document.getElementById('resultado') as HTMLElement;
-    const num1Input = document.getElementById('num1') as HTMLInputElement;
-    const num2Input = document.getElementById('num2') as HTMLInputElement;
+    const form: HTMLFormElement | null = document.getElementById('formSomar') as HTMLFormElement;
+    const resultadoDisplay: HTMLElement | null = document.getElementById('resultado') as HTMLElement;
+    const num1Input: HTMLInputElement | null  = document.getElementById('num1') as HTMLInputElement;
+    const num2Input: HTMLInputElement | null = document.getElementById('num2') as HTMLInputElement;
 
     form.addEventListener('submit', (e: Event) => {
         e.preventDefault(); // Impede o formulário de recarregar a página

@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const form = document.getElementById('formNomeSobrenome') as HTMLFormElement;
-    const resultadoDisplay = document.getElementById('nomeCompleto') as HTMLElement;
-    const nomeInput = document.getElementById('nome') as HTMLInputElement;
-    const sobrenomeInput = document.getElementById('sobrenome') as HTMLInputElement;
+    const form: HTMLFormElement | null = document.getElementById('formNomeSobrenome') as HTMLFormElement;
+    const resultadoDisplay: HTMLElement | null = document.getElementById('nomeCompleto') as HTMLElement;
+    const nomeInput: HTMLInputElement | null = document.getElementById('nome') as HTMLInputElement;
+    const sobrenomeInput: HTMLInputElement | null = document.getElementById('sobrenome') as HTMLInputElement;
 
     form.addEventListener('submit', (e: Event) => {
         e.preventDefault();
