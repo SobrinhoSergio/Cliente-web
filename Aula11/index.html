@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtrar Pessoas</title>
+  <script src="../dist/Aula11/index.js" defer></script>
+</head>
+<body>
+  <h1>Filtrar Pessoas</h1>
+
+  <div id="filters">
+    <label for="stateFilter">Estado:</label>
+    <select id="stateFilter">
+      <option value="">Todos</option>
+    </select>
+
+    <label for="nameFilter">Nome:</label>
+    <input type="text" id="nameFilter" placeholder="Digite um nome">
+
+    <label for="yearFilter">Ano de Nascimento:</label>
+    <select id="yearFilter">
+      <option value="">Todos</option>
+    </select>
+  </div>
+
+  <table id="dataTable" border="1">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Sexo</th>
+        <th>Cidade</th>
+        <th>Estado</th>
+        <th>Ano de Nascimento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Dados preenchidos dinamicamente -->
+    </tbody>
+  </table>
+</body>
+</html>
