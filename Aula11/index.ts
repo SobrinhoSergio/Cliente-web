@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Tipos para as entidades
-    type Pessoa = {
+    interface Pessoa {
       nome: string;
       idade: number;
       sexo: string;
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
   
     // Referências aos elementos do DOM
-    const stateFilter: HTMLSelectElement = document.getElementById("stateFilter") as HTMLSelectElement;
+    const stateFilter: HTMLSelectElement | null= document.getElementById("stateFilter") as HTMLSelectElement;
     const nameFilter: HTMLInputElement = document.getElementById("nameFilter") as HTMLInputElement;
     const yearFilter: HTMLSelectElement = document.getElementById("yearFilter") as HTMLSelectElement;
     const tableBody: HTMLTableSectionElement = document.querySelector("#dataTable tbody") as HTMLTableSectionElement;
