@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
   
     // Referências aos elementos do DOM
-    const stateFilter: HTMLSelectElement | null= document.getElementById("stateFilter") as HTMLSelectElement;
+    const stateFilter: HTMLSelectElement | null = document.getElementById("stateFilter") as HTMLSelectElement;
     const nameFilter: HTMLInputElement = document.getElementById("nameFilter") as HTMLInputElement;
     const yearFilter: HTMLSelectElement = document.getElementById("yearFilter") as HTMLSelectElement;
     const tableBody: HTMLTableSectionElement = document.querySelector("#dataTable tbody") as HTMLTableSectionElement;

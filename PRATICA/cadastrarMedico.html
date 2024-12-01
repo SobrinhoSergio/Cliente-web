@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cadastrarMedico.js"></script>
+</head>
+<body onload="main()">
+    <div>
+        Cadastro Medico
+    </div>
+    <form action="" class="form">
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome">
+        </div>
+        <div>
+            <label for="CRM">CRM: </label>
+            <input type="text" id="CRM">
+        </div>
+        <div>
+            <div>
+                Atendimento:
+            </div>
+            <div>
+                <input type="checkbox" id="segunda" value="segunda">
+                <label for="segunda">segunda</label>
+                <input type="checkbox" id="terca" value="terca">
+                <label for="terca">terca</label>
+                <input type="checkbox" id="quarta" value="quarta">
+                <label for="quarta">quarta</label>
+                <input type="checkbox" id="quinta" value="quinta">
+                <label for="quinta">quinta</label>
+                <input type="checkbox" id="sexta" value="sexta">
+                <label for="sexta">sexta</label>
+            </div>
+        </div>
+        <div>
+            <label for="especialidade">especialidade</label>
+            <select name="especialidade" id="especialidade">
+            <option value="Dermatologista">Dermatologista</option>
+            <option value="Cardiologista">Cardiologista</option>
+            <option value="Neurologista">Neurologista</option>
+            <option value="Reumatologista">Reumatologista</option>
+            <option value="Hematologista">Hematologista</option>
+        </select>
+        </div>
+        
+        <button id="btnCadastrarMedico">Cadastrar Medico</button>
+    </form>
+</body>
+</html>

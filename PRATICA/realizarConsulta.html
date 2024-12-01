@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="realizarConsulta.js"></script>
+</head>
+<body onload="main()">
+    <form action="">
+        realizar consulta
+        <input type="text" id="data">
+        <label for="data">data</label>
+        <input type="text" id="tipo">
+        <label for="tipo">tipo</label>
+        <input type="text" id="obs">
+        <label for="obs">obs</label>
+        <input type="text" id="medicamentos">
+        <label for="medicamentos">medicamentos</label>
+        <select name="exames" id="exames">
+            <option value="hemograma">hemograma</option>
+            <option value="ultrasom">ultrasom</option>
+            <option value="raiox">raiox</option>
+        </select>
+
+        <div id="selectMedico"></div>
+        <div id="selectPaciente"></div>
+
+        <!-- <input type="text" id="medico">
+        <label for="medico">medico</label>
+        <input type="text" id="paciente">
+        <label for="paciente">paciente</label> -->
+        <button id="realizarConsulta">realizarConsulta</button>
+    </form>
+</body>
+</html>

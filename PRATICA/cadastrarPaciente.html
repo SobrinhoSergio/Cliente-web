@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="cadastrarPaciente.js"></script>
+</head>
+<body onload="main()">
+    <form action="">
+        <input type="text" id="nome">
+        <label for="nome">Nome</label>
+        <div>
+            endereco
+            <input type="text" id="logradouro">
+            <label for="logradouro">logradouro</label>
+            <input type="text" id="numero">
+            <label for="numero">numero</label>
+            <input type="text" id="complemento">
+            <label for="complemento">complemento</label>
+            <input type="text" id="bairro">
+            <label for="bairro">bairro</label>
+            <input type="text" id="cep">
+            <label for="cep">cep</label>
+            <input type="text" id="cidade">
+            <label for="cidade">cidade</label>
+        </div>
+        <div>
+            identidade
+            <input type="text" id="numeroIdentidade">
+            <label for="numeroIdentidade">numeroIdentidade</label>
+            <select name="tipodocumento" id="tipoDocumento">
+                <option value="rg">rg</option>
+                <option value="motorista">motorista</option>
+                <option value="cpf">cpf</option>
+            </select>
+        </div>
+        <button id="btnCadastrarPaciente">Cadastrar Paciente</button>
+    </form>
+</body>
+</html>
