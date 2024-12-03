@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busca com Autocompletar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .search-container {
+      position: relative;
+      width: 300px;
+    }
+    #search-input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .suggestions {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      border: 1px solid #ccc;
+      border-top: none;
+      background: #fff;
+      z-index: 1000;
+      border-radius: 0 0 5px 5px;
+    }
+    .suggestion-item {
+      padding: 10px;
+      cursor: pointer;
+    }
+    .suggestion-item:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Digite para buscar..." autocomplete="off">
+    <div class="suggestions" id="suggestions"></div>
+  </div>
+  <script src="autocomplete.js"></script>
+</body>
+</html>

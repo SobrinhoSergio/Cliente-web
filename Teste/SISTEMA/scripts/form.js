@@ -4,6 +4,8 @@ export function createForm() {
     const form = document.createElement('form');
     form.id = 'userForm';
 
+    const registeredNames = []; // Array para controlar os nomes cadastrados
+
     // Nome
     const nameLabel = document.createElement('label');
     nameLabel.htmlFor = 'nameInput';
@@ -40,8 +42,14 @@ export function createForm() {
         const age = parseInt(ageInput.value);
 
         if (name && !isNaN(age)) {
-            addUser({ name, age });
-            form.reset();
+            // Verificar se o nome já está registrado
+            if (registeredNames.includes(name)) {
+                alert('Este nome já foi cadastrado.');
+            } else {
+                addUser({ name, age });
+                registeredNames.push(name); // Adiciona o nome à lista de nomes registrados
+                form.reset();
+            }
         } else {
             alert('Por favor, preencha todos os campos corretamente.');
         }
