@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Dinâmico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        input {
+            padding: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Input Dinâmico</h1>
+    <div class="container">
+        <input id="dynamicInput" type="text" placeholder="Digite seu nome">
+        <button id="toggleType">Mudar para Número</button>
+    </div>
+
+    <script>
+        const input = document.getElementById('dynamicInput');
+        const button = document.getElementById('toggleType');
+
+        button.addEventListener('click', () => {
+            if (input.type === 'text') {
+                input.type = 'number';
+                input.placeholder = 'Digite sua idade';
+                button.textContent = 'Mudar para Texto';
+            } else {
+                input.type = 'text';
+                input.placeholder = 'Digite seu nome';
+                button.textContent = 'Mudar para Número';
+            }
+        });
+    </script>
+</body>
+</html>
