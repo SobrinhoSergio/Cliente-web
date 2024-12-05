@@ -22,7 +22,7 @@ export const arrayCadastro = [];
     arrayCadastro.push(nome);
 }*/
 
-export function cadastrarRegistro({ nome, sobrenome, idade, cidade }) {
+export function cadastrarRegistro({ id, nome, sobrenome, idade, cidade }) {
     // Validações
     if (!nome || !sobrenome || !idade || !cidade) {
         alert("Todos os campos devem ser preenchidos.");
@@ -42,7 +42,7 @@ export function cadastrarRegistro({ nome, sobrenome, idade, cidade }) {
 
 
     // Registro válido
-    arrayCadastro.push({ nome, sobrenome, idade, cidade });
+    arrayCadastro.push({ id, nome, sobrenome, idade, cidade });
     console.log(arrayCadastro);
     return true;
 }
