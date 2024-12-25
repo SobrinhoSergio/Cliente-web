@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo LocalStorage com Classe Pessoa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Sistema Cadastro</h1>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h2>Cadastro de Pessoa</h2>
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+      </div>
+      <div class="form-group">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" placeholder="Digite sua idade">
+      </div>
+      <div class="form-group">
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento">
+      </div>
+      <div class="form-group">
+        <label for="estadoCivil">Estado Civil:</label>
+        <select id="estadoCivil">
+          <option value="Solteiro">Solteiro</option>
+          <option value="Casado">Casado</option>
+          <option value="Divorciado">Divorciado</option>
+          <option value="Viúvo">Viúvo</option>
+        </select>
+      </div>
+      <div class="button-group">
+        <button id="salvar">Salvar</button>
+        <button id="limpar">Limpar</button>
+      </div>
+    </section>
+
+    <section class="filter-container">
+      <h2>Filtrar Pessoas</h2>
+      <div class="form-group">
+        <label for="filtroNome">Nome:</label>
+        <input type="text" id="filtroNome" placeholder="Filtrar por nome">
+      </div>
+      <div class="form-group">
+        <label for="filtroIdade">Idade:</label>
+        <input type="number" id="filtroIdade" placeholder="Filtrar por idade">
+      </div>
+      <div class="form-group">
+        <label for="filtroDataNascimento">Data de Nascimento:</label>
+        <input type="date" id="filtroDataNascimento">
+      </div>
+      <div class="form-group">
+        <label for="filtroEstadoCivil">Estado Civil:</label>
+        <select id="filtroEstadoCivil">
+          <option value="">Todos</option>
+          <option value="Solteiro">Solteiro</option>
+          <option value="Casado">Casado</option>
+          <option value="Divorciado">Divorciado</option>
+          <option value="Viúvo">Viúvo</option>
+        </select>
+      </div>
+      <button id="aplicarFiltro">Aplicar Filtro</button>
+    </section>
+
+    <section class="table-container">
+      <h2>Lista de Pessoas</h2>
+      <table id="tabelaPessoas">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Data de Nascimento</th>
+            <th>Estado Civil</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script type="module" src="js/index.js" defer></script>
+</body>
+</html>
