@@ -1,3 +1,5 @@
+import { exibirPessoas } from './utils.js';
+
 // Função para filtrar as pessoas com base nos campos preenchidos
 export function filtrarPessoas(pessoas, filtros) {
   return pessoas.filter(pessoa => {
